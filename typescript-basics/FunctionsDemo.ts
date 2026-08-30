@@ -23,3 +23,11 @@ var sum = function(x:number,y:number):number{
     return x+y;
 }
 console.log(sum(10,20));
+
+function addNumbers(a:number,b:number){
+    return a+b;
+}
+
+let sum1:number = addNumbers(10,20);
+console.log(sum1); // 30
+
