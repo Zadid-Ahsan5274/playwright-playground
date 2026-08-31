@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\playwright.config.js",
-    "rootDir": "C:/Users/User/Documents/Playwright-Projects/SDET-QA-Tutorials/tests",
+    "configFile": "D:\\Visual Studio Code Projects\\playwright-playground\\playwright.config.js",
+    "rootDir": "D:/Visual Studio Code Projects/playwright-playground/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -36,7 +34,7 @@
         }
       ],
       [
-        "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "D:\\Visual Studio Code Projects\\playwright-playground\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         {
           "outputFolder": "allure-reports"
         }
@@ -49,15 +47,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/User/Documents/Playwright-Projects/SDET-QA-Tutorials/test-results",
+        "outputDir": "D:/Visual Studio Code Projects/playwright-playground/test-results",
         "repeatEach": 1,
-        "retries": 1,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "retries": 0,
+        "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/User/Documents/Playwright-Projects/SDET-QA-Tutorials/tests",
+        "testDir": "D:/Visual Studio Code Projects/playwright-playground/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -69,132 +65,22 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.54.1",
-    "workers": 1,
+    "workers": 4,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "Retry.spec.js",
-      "file": "Retry.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "test",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 51612,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\tests\\pages\\HomePage.js",
-                        "column": 52,
-                        "line": 22
-                      },
-                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//a[normalize-space()=\\'Add to cart\\']')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\HomePage.js:22\n\n\u001b[0m \u001b[90m 20 |\u001b[39m             }\n \u001b[90m 21 |\u001b[39m         })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddToCartBtn)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     }\n \u001b[90m 24 |\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m gotoCart(){\u001b[0m\n\u001b[2m    at HomePage.addProductToCart (C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\tests\\pages\\HomePage.js:22:52)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\tests\\Retry.spec.js:22:5\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-08-13T13:01:31.265Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\test-results\\Retry-test-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\test-results\\Retry-test-chromium\\trace.zip"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 56485,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\tests\\pages\\HomePage.js",
-                        "column": 52,
-                        "line": 22
-                      },
-                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//a[normalize-space()=\\'Add to cart\\']')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\HomePage.js:22\n\n\u001b[0m \u001b[90m 20 |\u001b[39m             }\n \u001b[90m 21 |\u001b[39m         })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maddToCartBtn)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     }\n \u001b[90m 24 |\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m gotoCart(){\u001b[0m\n\u001b[2m    at HomePage.addProductToCart (C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\tests\\pages\\HomePage.js:22:52)\u001b[22m\n\u001b[2m    at C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\tests\\Retry.spec.js:22:5\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2025-08-13T13:02:44.153Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\test-results\\Retry-test-chromium-retry1\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\test-results\\Retry-test-chromium-retry1\\error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\User\\Documents\\Playwright-Projects\\SDET-QA-Tutorials\\test-results\\Retry-test-chromium-retry1\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "86dfbc975ae05ebbd221-280a36bdd8ded108c4ea",
-          "file": "Retry.spec.js",
-          "line": 6,
-          "column": 1
-        }
-      ]
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2025-08-13T13:01:28.882Z",
-    "duration": 143045.56,
+    "startTime": "2026-08-31T06:29:51.968Z",
+    "duration": 28.117999999999938,
     "expected": 0,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
