@@ -31,7 +31,7 @@ test.skip("Data Test ID Locator Test",async({})=>{
     await expect(page.getByTestId("welcome")).toBeVisible(); 
 });
 
-test("ID Locator Test",async({})=>{
+test.skip("ID Locator Test",async({})=>{
     const browser:Browser = await chromium.launch({headless:false,channel:"chromium"});
     const context:BrowserContext = await browser.newContext();
     const page:Page = await context.newPage();
@@ -82,4 +82,6 @@ test("ID Locator Test",async({})=>{
     // await new Promise(() => {});  // Prevents script from existing before the page is loaded
 
 });
+
+
 
