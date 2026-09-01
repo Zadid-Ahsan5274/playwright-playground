@@ -12,7 +12,7 @@ test("Handle Dropdown",async({})=>{
     // await page.selectOption(country_dropdown,{value:'AD'});
     // await page.selectOption(country_dropdown,{label:'Australia'});
     // await page.selectOption(country_dropdown,{index:5});
-    const all_options = await page.$$(country_dropdown+'> option');
+    const all_options = await page.$$(country_dropdown+' > option');
     console.log(all_options.length);
     for(const e of all_options){
         const text = await e.textContent();
