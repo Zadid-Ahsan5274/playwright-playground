@@ -1,9 +1,7 @@
 import { Page } from "@playwright/test";
 export default class RegisterPage {
 
-    private page: Page;
-
-    constructor(page: Page) {
+    constructor(public page: Page) {
         this.page = page;
     }
 
@@ -36,7 +34,7 @@ export default class RegisterPage {
     }
 
     async clickedTermsAndConditions() {
-        await this.page.locator("#input-agree").click();
+        await this.page.locator("label[for='input-agree']").click();
     }
 
     async clickContinueToRegister() {
