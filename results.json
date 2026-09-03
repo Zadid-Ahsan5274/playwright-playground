@@ -1,24 +1,95 @@
 {
   "config": {
-    "configFile": "D:\\Visual Studio Code Projects\\playwright-playground\\playwright.config.js",
-    "rootDir": "D:/Visual Studio Code Projects/playwright-playground/tests",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\zadid.ahsan\\WebstormProjects\\playwright-playground\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/Reporters.spec.ts"
+    ],
+    "configFile": "C:\\Users\\zadid.ahsan\\WebstormProjects\\playwright-playground\\playwright.config.ts",
+    "rootDir": "C:/Users/zadid.ahsan/WebstormProjects/playwright-playground/tests",
+    "failOnFlakyTests": false,
     "forbidOnly": false,
-    "fullyParallel": false,
+    "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 4
+    },
     "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/zadid.ahsan/WebstormProjects/playwright-playground/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/zadid.ahsan/WebstormProjects/playwright-playground/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/zadid.ahsan/WebstormProjects/playwright-playground/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/zadid.ahsan/WebstormProjects/playwright-playground/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/zadid.ahsan/WebstormProjects/playwright-playground/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/zadid.ahsan/WebstormProjects/playwright-playground/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
     "reporter": [
+      [
+        "html",
+        {
+          "open": "always",
+          "output-folder": "html-reports"
+        }
+      ],
       [
         "list",
         null
       ],
       [
-        "html",
+        "line",
+        null
+      ],
+      [
+        "dot",
         null
       ],
       [
@@ -34,9 +105,9 @@
         }
       ],
       [
-        "D:\\Visual Studio Code Projects\\playwright-playground\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "C:\\Users\\zadid.ahsan\\WebstormProjects\\playwright-playground\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         {
-          "outputFolder": "allure-reports"
+          "resultsDir": "allure-results"
         }
       ]
     ],
@@ -44,41 +115,335 @@
       "max": 5,
       "threshold": 300000
     },
-    "quiet": false,
-    "projects": [
-      {
-        "outputDir": "D:/Visual Studio Code Projects/playwright-playground/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "D:/Visual Studio Code Projects/playwright-playground/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      }
-    ],
     "shard": null,
+    "tags": [],
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
-    "version": "1.54.1",
+    "version": "1.62.1",
     "workers": 4,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "title": "Reporters.spec.ts",
+      "file": "Reporters.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Logo Presence Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4231,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:06.469Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-fc447946d85387491e88",
+          "file": "Reporters.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Page Title Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4569,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:06.399Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-b228bc821c50c22db267",
+          "file": "Reporters.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Search Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 5286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:06.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-9bf96d356ed5d1e3eb34",
+          "file": "Reporters.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "Logo Presence Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6164,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:06.412Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-0e0600f420111f07715f",
+          "file": "Reporters.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Page Title Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5340,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:12.675Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-06928ead3e82c9c44cb0",
+          "file": "Reporters.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Search Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7660,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:12.911Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-5dcf8b92d8641d691a2c",
+          "file": "Reporters.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "Logo Presence Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 5006,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:13.953Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-6fbde9f4b283fed89977",
+          "file": "Reporters.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Page Title Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 4711,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:16.744Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-175fc65131ebe00269a4",
+          "file": "Reporters.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Search Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 5811,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-03T04:00:19.212Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe316d4a6d3b06ed478e-d06f6a8f09bb56dcc0c1",
+          "file": "Reporters.spec.ts",
+          "line": 15,
+          "column": 5
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2026-08-31T06:29:51.968Z",
-    "duration": 28.117999999999938,
-    "expected": 0,
+    "startTime": "2026-09-03T04:00:05.295Z",
+    "duration": 19833.218,
+    "expected": 9,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -1,2 +1,26 @@
-<testsuites id="" name="" tests="0" failures="0" skipped="0" errors="0" time="0.028117999999999938">
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="19.833218000000002">
+<testsuite name="Reporters.spec.ts" timestamp="2026-09-03T04:00:05.365Z" hostname="chromium" tests="3" failures="0" skipped="0" time="14.086" errors="0">
+<testcase name="Logo Presence Test" classname="Reporters.spec.ts" time="4.231">
+</testcase>
+<testcase name="Page Title Test" classname="Reporters.spec.ts" time="4.569">
+</testcase>
+<testcase name="Search Test" classname="Reporters.spec.ts" time="5.286">
+</testcase>
+</testsuite>
+<testsuite name="Reporters.spec.ts" timestamp="2026-09-03T04:00:05.365Z" hostname="firefox" tests="3" failures="0" skipped="0" time="19.164" errors="0">
+<testcase name="Logo Presence Test" classname="Reporters.spec.ts" time="6.164">
+</testcase>
+<testcase name="Page Title Test" classname="Reporters.spec.ts" time="5.34">
+</testcase>
+<testcase name="Search Test" classname="Reporters.spec.ts" time="7.66">
+</testcase>
+</testsuite>
+<testsuite name="Reporters.spec.ts" timestamp="2026-09-03T04:00:05.365Z" hostname="webkit" tests="3" failures="0" skipped="0" time="15.528" errors="0">
+<testcase name="Logo Presence Test" classname="Reporters.spec.ts" time="5.006">
+</testcase>
+<testcase name="Page Title Test" classname="Reporters.spec.ts" time="4.711">
+</testcase>
+<testcase name="Search Test" classname="Reporters.spec.ts" time="5.811">
+</testcase>
+</testsuite>
 </testsuites>

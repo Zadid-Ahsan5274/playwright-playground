@@ -13,3 +13,5 @@ allure-results/
 
 # Playwright
 /playwright/.auth/
+.github/
+
