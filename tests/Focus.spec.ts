@@ -8,8 +8,8 @@ test("Focus Element Test",async({})=>{
     await page.goto("https://orangehrm.com/30-day-free-trial");
     await page.getByText("Allow all").focus();
     await page.getByText("Allow all").click();
-    const fullName = await page.locator("#Form_getForm_Name");
-    fullName.focus();
-    fullName.fill("Testing Automation");
+    const fullName = page.locator("#Form_getForm_Name");
+    await fullName.focus();
+    await fullName.fill("Testing Automation");
     await page.waitForTimeout(5000);
 });
