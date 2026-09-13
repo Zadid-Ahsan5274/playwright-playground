@@ -1,5 +1,5 @@
-import {test,expect,Locator,Browser,Page,FrameLocator} from "@playwright/test";
-import { chromium } from "playwright";
+import {test,expect,Locator,Browser,Page,FrameLocator,chromium} from "@playwright/test";
+
 
 test("Auto Wait Checks 1",async({})=>{
     const browser:Browser = await chromium.launch({headless:false,channel:"chrome"});
